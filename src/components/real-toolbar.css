@@ -1,0 +1,30 @@
+.real-toolbar {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  background-color: var(--secondary-bg-color);
+}
+
+.left-item {
+  flex: 25%;
+  align-self: center;
+}
+.left-item img {
+  max-width: 50px;
+  max-height: 50px;
+}
+
+.center-item {
+  align-self: center;
+  flex: 50%;
+  text-align: center;
+  color: var(--main-title-color);
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.right-item {
+  align-self: center;
+  flex: 25%;
+  text-align: right;
+}

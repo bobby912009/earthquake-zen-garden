@@ -1,0 +1,22 @@
+/* CSS styles we want the entire application to inherit */
+
+:root {
+  --main-background-color: #fff;
+  --secondary-bg-color: #ededed;
+  --main-title-color: #777;
+  --title-color: #444;
+  --link-item: #0011bb;
+  --link-item-clicked: #6600cc;
+}
+body {
+  font-family: sans-serif;
+  background-color: var(--main-bg-color);
+  margin: 0px;
+}
+a {
+  color: var(--link-item);
+  font-weight: 600;
+}
+a:-webkit-any-link {
+  color: var(--link-item-clicked);
+}
