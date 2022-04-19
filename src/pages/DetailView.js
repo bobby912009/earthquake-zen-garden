@@ -4,8 +4,7 @@ import { useParams } from "react-router-dom";
 import DetailInformation from "../components/DetailInformation";
 import Title from "../components/Title";
 import FlexBox from "../components/FlexBox";
-import useFeatureFromId from "../components/useFeatureFromId";
-
+import useFeatureFromId from "../hooks/useFeatureFromId";
 /**
  * A detail view for the information being displayed for the feature data
  * @returns  <DetailView />

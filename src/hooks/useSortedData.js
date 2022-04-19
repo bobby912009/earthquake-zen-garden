@@ -11,7 +11,7 @@ import { useState, useMemo } from "react";
  * @returns the sorted items, the sorted information and a function to change the sort
  * @example {items, sortInfo, changeSortByField}
  */
-export function useSortedData(data, sortInfoSchem = null) {
+export default function useSortedData(data, sortInfoSchem = null) {
   const [sortInfo, setSortInfo] = useState(sortInfoSchem);
 
   // Sort the data via useMemo to help with time complexity
