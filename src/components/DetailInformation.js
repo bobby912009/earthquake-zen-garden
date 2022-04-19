@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import "./detail-informaiton.css";
 
 /**
@@ -8,7 +9,7 @@ import "./detail-informaiton.css";
  * @param {Object} data - an object containing a field and value
  * @returns <DetailsInformation />
  */
-export default function DetailInformation({ map, data }) {
+function DetailInformation({ map, data }) {
   /**
    * A helper function used to generate a list of rows to render
    * @param {Map} map - field value key pair
@@ -41,3 +42,12 @@ export default function DetailInformation({ map, data }) {
     </table>
   );
 }
+
+// Helps to ensure developers implement correct type
+DetailInformation.propTypes = {
+  map: PropTypes.object,
+  data: PropTypes.object,
+};
+
+// Export it
+export default DetailInformation;

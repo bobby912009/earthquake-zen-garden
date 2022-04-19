@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 import { getDateFormatFromMills } from "../utilities/real-helpers";
 import { Link, Outlet } from "react-router-dom";
 import useSortedData from "../hooks/useSortedData";
@@ -9,7 +10,7 @@ import "./table.css";
  * @param {Array} data the data to be displayed in the table
  * @returns <Table>
  */
-export default function Table({ data }) {
+function Table({ data }) {
   // Creates the map to be used in the column's of the table
   const map = {
     title: "Title",
@@ -20,7 +21,7 @@ export default function Table({ data }) {
   // Use our custom hook to sort the data and retrieve the function for chaning sort
   const { items, sortInfo, changeSortByField } = useSortedData(data, {
     field: "time",
-    isAsc: false,
+    isAsc: true,
   });
 
   /**
@@ -86,3 +87,11 @@ export default function Table({ data }) {
     </div>
   );
 }
+
+// Helps to ensure devlopers use the correct type
+Table.propTypes = {
+  data: PropTypes.arrayOf(PropTypes.object),
+};
+
+// Export the table
+export default Table;
