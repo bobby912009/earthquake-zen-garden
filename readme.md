@@ -29,4 +29,4 @@ browser</p>
 <p>Runs a very basic linter to enforce basic code qualities, such as throwing an error for unused imports.
 This helps ensure the application has some basic code quality rules that can be enforced.</p>
 
-[github project link]: https://github.com/bobby912009/earthquake-zen-garden
+[github project link](https://github.com/bobby912009/earthquake-zen-garden)
