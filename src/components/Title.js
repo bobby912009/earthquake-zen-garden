@@ -1,5 +1,5 @@
 import React from "react";
-import "./title.css";
+import "./css/title.css";
 
 export default function Title(props) {
   return <div className="title">{props.children}</div>;

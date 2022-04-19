@@ -1,5 +1,5 @@
 import React from "react";
-import "./flex-box.css";
+import "./css/flex-box.css";
 
 export default function FlexBox(props) {
   return <div className="box">{props.children}</div>;

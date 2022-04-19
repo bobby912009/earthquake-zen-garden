@@ -1,4 +1,4 @@
-import { REAL_DEAFUALT_DATE_FORMAT } from "./real-constants";
+import { DEAFUALT_DATE_FORMAT } from "./real-constants";
 import dateFormat from "dateformat";
 import realData from "../data/real.json";
 
@@ -6,13 +6,10 @@ import realData from "../data/real.json";
  * A helper function Used to get a date format from an unix epoch milliseconds
  * @param {Number} mills - the unix epoch milliseconds
  * @param {String} format - the date format to convert the mills to
- * @default REAL_DEAFUALT_DATE_FORMAT
- * @returns
+ * @default DEAFUALT_DATE_FORMAT
+ * @returns String formatted date
  */
-export function getDateFormatFromMills(
-  mills,
-  format = REAL_DEAFUALT_DATE_FORMAT
-) {
+export function getDateFormatFromMills(mills, format = DEAFUALT_DATE_FORMAT) {
   return dateFormat(new Date(mills), format);
 }
 

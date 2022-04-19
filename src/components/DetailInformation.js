@@ -1,19 +1,19 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./detail-informaiton.css";
+import "./css/detail-informaiton.css";
 
 /**
  * Used to show detailed information for a paritcular piece of a JSON object.
  * @param {Map} map - the map that contains a key for each item to be shown along with a value to display to the user
  * @example {title: "Title"}
  * @param {Object} data - an object containing a field and value
- * @returns <DetailsInformation />
+ * @returns element <DetailsInformation />
  */
 function DetailInformation({ map, data }) {
   /**
    * A helper function used to generate a list of rows to render
    * @param {Map} map - field value key pair
-   * @returns <GeneratedTRFromMap />
+   * @returns element <GeneratedTRFromMap />
    */
   function GeneratedTRFromMap({ map, data }) {
     // Store the generated components

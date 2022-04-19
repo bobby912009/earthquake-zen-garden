@@ -6,7 +6,7 @@ import { getUserProfileFromData } from "../utilities/real-helpers";
 
 /**
  * The user's profile screen.
- * @returns <UserProfile />
+ * @returns element <UserProfile />
  */
 export default function UserProfile() {
   // Create the key value pairs
@@ -27,7 +27,7 @@ export default function UserProfile() {
       <FlexBox>
         <img
           src={userProfile.avatarImage}
-          style={{ width: "200px", height: "200px" }}
+          style={{ width: 200, height: 200 }}
           alt="Picture of the current user"
         />
         {/* Don't render the DetailInformation if we don't have data for it yet */}

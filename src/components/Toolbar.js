@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./real-toolbar.css";
+import "./css/real-toolbar.css";
 import {
   getSiteInfoFromData,
   getUserProfileFromData,
@@ -11,7 +11,7 @@ import { MAIN_URL, USER_PROFILE_URL } from "../utilities/real-constants";
 /**
  * For use as the web appliction's main toolbar.
  * @param children - currently used to get children elements
- * @returns <Toolbar />
+ * @returns element <Toolbar />
  */
 function Toolbar({ children }) {
   // Gets the site's info
@@ -22,7 +22,7 @@ function Toolbar({ children }) {
 
   /**
    * Creates toolbar links
-   * @returns <Bar />
+   * @returns element <Bar />
    */
   function Bar() {
     return (

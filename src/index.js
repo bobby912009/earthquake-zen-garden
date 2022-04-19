@@ -1,6 +1,6 @@
 /* eslint-env browser */
-import React from "react";
-import { render } from "react-dom";
+import React, { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./pages/App";
 import Toolbar from "./components/Toolbar";
@@ -12,8 +12,10 @@ import { MAIN_URL, USER_PROFILE_URL } from "./utilities/real-constants";
  * Setting up the single page application
  */
 const rootElement = document.getElementById("root");
-render(
-  <>
+const root = createRoot(rootElement);
+
+root.render(
+  <StrictMode>
     <BrowserRouter>
       <Routes>
         <Route
@@ -42,6 +44,5 @@ render(
         />
       </Routes>
     </BrowserRouter>
-  </>,
-  rootElement
+  </StrictMode>
 );

@@ -3,12 +3,12 @@ import PropTypes from "prop-types";
 import { getDateFormatFromMills } from "../utilities/real-helpers";
 import { Link, Outlet } from "react-router-dom";
 import useSortedData from "../hooks/useSortedData";
-import "./table.css";
+import "./css/table.css";
 
 /**
  *  A general re-usable table for our application. Has the ability to sort columns.
  * @param {Array} data the data to be displayed in the table
- * @returns <Table>
+ * @returns element <Table>
  */
 function Table({ data }) {
   // Creates the map to be used in the column's of the table
@@ -43,7 +43,7 @@ function Table({ data }) {
    * @example {myTitle : "My Title"}
    * @param {Array} data - an array of data objects. These objects should have fields relative to the @see map above
    * @example [{myTitle: "something"}]
-   * @returns
+   * @returns element <GeneratedTRFromArray />
    */
   function GeneratedTRFromArray({ map, data }) {
     const comps = [];

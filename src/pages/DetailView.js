@@ -6,7 +6,7 @@ import FlexBox from "../components/FlexBox";
 import useFeatureFromId from "../hooks/useFeatureFromId";
 /**
  * A detail view for the information being displayed for the feature data
- * @returns  <DetailView />
+ * @returns element <DetailView />
  */
 export default function DetailView() {
   // Uses the param hook to retrieve the query params in the url

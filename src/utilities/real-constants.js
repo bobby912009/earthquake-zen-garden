@@ -1,7 +1,7 @@
 /**
  * Stores the default date format
  */
-export const REAL_DEAFUALT_DATE_FORMAT = "mmm dd, yyyy, hh:mm TT";
+export const DEAFUALT_DATE_FORMAT = "mmm dd, yyyy, hh:mm TT";
 
 /**
  * Stores the default page url
