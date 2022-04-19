@@ -37,7 +37,8 @@ export default function DetailView() {
         <Title>{detailData ? detailData.title : "No Title"}</Title>
       </FlexBox>
       <FlexBox>
-        <DetailInformation map={map} data={detailData} />
+        {/* Don't render the DetailInformation if we have no data */}
+        {detailData ? <DetailInformation map={map} data={detailData} /> : <></>}
       </FlexBox>
     </>
   );

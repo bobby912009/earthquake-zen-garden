@@ -43,10 +43,9 @@ function DetailInformation({ map, data }) {
   );
 }
 
-// Helps to ensure developers implement correct type
 DetailInformation.propTypes = {
-  map: PropTypes.object,
-  data: PropTypes.object,
+  map: PropTypes.object.isRequired,
+  data: PropTypes.object.isRequired,
 };
 
 // Export it

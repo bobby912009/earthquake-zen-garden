@@ -30,7 +30,12 @@ export default function UserProfile() {
           style={{ width: "200px", height: "200px" }}
           alt="Picture of the current user"
         />
-        <DetailInformation map={map} data={userProfile} />
+        {/* Don't render the DetailInformation if we don't have data for it yet */}
+        {userProfile ? (
+          <DetailInformation map={map} data={userProfile} />
+        ) : (
+          <></>
+        )}
       </FlexBox>
     </div>
   );
