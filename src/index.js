@@ -2,7 +2,7 @@
 import React from "react";
 import { render } from "react-dom";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import App from "./App";
+import App from "./pages/App";
 import Toolbar from "./components/Toolbar";
 import DetailView from "./pages/DetailView";
 import UserProfile from "./pages/UserProfile";
